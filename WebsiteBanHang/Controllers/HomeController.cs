@@ -12,7 +12,7 @@ namespace WebsiteBanHang.Controllers
 {
     public class HomeController : Controller
     {
-        WebBanHangEntities1 obj = new WebBanHangEntities1();
+        WebBanHangEntities obj = new WebBanHangEntities();
         public ActionResult Index()
         {
             var lstProduct = obj.Products.ToList();

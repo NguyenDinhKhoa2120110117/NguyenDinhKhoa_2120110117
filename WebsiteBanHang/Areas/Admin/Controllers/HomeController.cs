@@ -8,7 +8,7 @@ namespace WebsiteBanHang.Areas.Admin.Controllers
 {
     public class HomeController : Controller
     {
-        // GET:Home
+        // GET: Admin/Home
         public ActionResult Index()
         {
             return View();

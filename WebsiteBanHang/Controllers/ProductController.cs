@@ -10,7 +10,7 @@ namespace WebsiteBanHang.Controllers
 {
     public class ProductController : Controller
     {
-        WebBanHangEntities1 obj = new WebBanHangEntities1();
+        WebBanHangEntities obj = new WebBanHangEntities();
         // GET: Product
         public ActionResult Detail(int id)
         {

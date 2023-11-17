@@ -4,10 +4,15 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c63c74de390b49bc877447d361d830cd" Name="Diagram1">
-        <EntityTypeShape EntityType="WebBanHangModel.Category" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WebBanHangModel.Product" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WebBanHangModel.User" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+      <Diagram DiagramId="3fb789ad9ea1423c92863905b41011b6" Name="Diagram1">
+        <EntityTypeShape EntityType="WebBanHangModel.Brand" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebBanHangModel.Category" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebBanHangModel.Order" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebBanHangModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebBanHangModel.User" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="WebBanHangModel.FK__Product__BrandId__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="WebBanHangModel.FK__Product__Categor__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="WebBanHangModel.FK__Order__ProductId__46E78A0C" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

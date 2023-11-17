@@ -19,7 +19,7 @@ namespace WebsiteBanHang.Areas.Admin
     "Admin/{controller}/{action}/{id}",
     new { action = "Index", id = UrlParameter.Optional },
     new[] { "WebsiteBanHang.Areas.Admin.Controllers" }
-);  
+);
         }
     }
 }

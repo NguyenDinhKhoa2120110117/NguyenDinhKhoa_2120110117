@@ -13,10 +13,10 @@ namespace WebsiteBanHang.Context
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WebBanHangEntities1 : DbContext
+    public partial class WebBanHangEntities : DbContext
     {
-        public WebBanHangEntities1()
-            : base("name=WebBanHangEntities1")
+        public WebBanHangEntities()
+            : base("name=WebBanHangEntities")
         {
         }
     
@@ -25,7 +25,9 @@ namespace WebsiteBanHang.Context
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Brand> Brands { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
